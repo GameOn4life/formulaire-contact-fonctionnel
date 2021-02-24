@@ -87,29 +87,29 @@
 
                     <div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate="Merci d'écrire votre nom">
                         <span class="label-input100">Votre nom *</span>
-                        <input class="input100 " type="text " name="name" placeholder="Ecrire votre nom " id="inputname">
+                        <input class="input100 " type="text " name="name" placeholder="Ecrire votre nom " id="inputname" value="<?= $_POST['name'] ?? '' ?>">
                     </div>
 
                     <div class="wrap-input100 validate-input bg1 rs1-wrap-input100 " data-validate="Merci d'écrire votre prénom">
                         <span class="label-input100">Votre prénom *</span>
-                        <input class="input100" type="text" name="prenom" placeholder="Ecrire votre prénom" id="inputprenom">
+                        <input class="input100" type="text" name="prenom" placeholder="Ecrire votre prénom" id="inputprenom" value="<?= $_POST['prenom'] ?? '' ?>">
                     </div>
 
 
                     <div class="wrap-input100 validate-input bg1 rs1-wrap-input100 " data-validate="Votre e-mail au format (e@a.x)">
                         <span class="label-input100">Email *</span>
-                        <input class="input100" type="text" name="email" placeholder="Votre e-mail" id="inputemail">
+                        <input class="input100" type="text" name="email" placeholder="Votre e-mail" id="inputemail" value="<?= $_POST['email'] ?? '' ?>">
                     </div>
 
                     <div class="wrap-input100 bg1 rs1-wrap-input100" data-validate="Merci de compléter ce champ">
                         <span class="label-input100">Numéro de téléphone</span>
-                        <input class="input100" type="number" name="phone" placeholder="Entrer votre numéro" id="inputphone">
+                        <input class="input100" type="number" name="phone" placeholder="Entrer votre numéro" id="inputphone" value="<?= $_POST['phone'] ?? '' ?>">
                     </div>
 
                     <div class="wrap-input100 input100-select bg1">
                         <span class="label-input100">Service à contacter</span>
                         <div>
-                            <select class="js-select2" name="service">
+                            <select class="js-select2" name="service" value="<?= $_POST['service'] ?? '' ?>">
                                 <option value="default">Choisissez...</option>
                                 <option value="1">S'incrire à la prochaine compétition</option>
                                 <option value="2">Réservation de PC pour les lan</option>
@@ -123,7 +123,7 @@
 
                     <div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate="Merci de compléter ce champ">
                         <span class="label-input100">Message</span>
-                        <textarea class="input100" name="message" placeholder="Votre message..." id="inputmessage"></textarea>
+                        <textarea class="input100" name="message" placeholder="Votre message..." id="inputmessage" value="<?= $_POST['message'] ?? '' ?>"></textarea>
                     </div>
 
                     <div class="container-contact100-form-btn">

@@ -1,7 +1,7 @@
 <?php
         
     //information de la connexion à la bdd
-	$bdd = 'compte';
+	$bdd = 'formulaire';
 	$server = '127.0.0.1';
     $user = 'root';
     $password = '';
